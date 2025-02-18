@@ -15,24 +15,21 @@ entrada = str(palabra[0])
     
 
 # Proceso
-if int(entrada)  >= 1 and int(entrada) <= 9:
-    resultado = "Error. Escribe una palabra"
+
+if ord(entrada [0]) == ord("A"):
+    resultado = entrada + " comineza con 'A'"
+
+elif ord(entrada [0]) == ord("Á"):
+    resultado = entrada + " comineza con 'A'"
+
+elif ord(entrada [0]) == ord("a"):
+    resultado = entrada + " comineza con 'A'"
+
+elif ord(entrada [0]) == ord("á"):
+    resultado = entrada + " comineza con 'A'"
 
 else:
-    if ord(entrada [0]) == ord("A"):
-        resultado = entrada + " comineza con 'A'"
-
-    elif ord(entrada [0]) == ord("Á"):
-        resultado = entrada + " comineza con 'A'"
-
-    elif ord(entrada [0]) == ord("a"):
-        resultado = entrada + " comineza con 'A'"
-
-    elif ord(entrada [0]) == ord("á"):
-        resultado = entrada + " comineza con 'A'"
-
-    else:
-        resultado = entrada + " no comienza con 'A' "
+    resultado = entrada + " no comienza con 'A' "
 
 # Salidas
 print(resultado)
