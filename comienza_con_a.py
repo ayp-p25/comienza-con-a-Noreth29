@@ -10,26 +10,26 @@ Comienza con A
 #Si comienza con á
 
 # Entradas
-entrada = input("Escribe una palabra: ")
-
+palabra = input("Escribe una palabra: ")
+entrada = str(palabra[0])
     
 
 # Proceso
 
-if ord(entrada [0]) == ord("A"):
-    resultado = str(entrada[0]) + " comineza con 'A'"
+if ord(entrada) == ord("A"):
+    resultado = "'" + palabra + "'" + " comineza con 'A'"
 
-elif ord(entrada [0]) == ord("Á"):
-    resultado = str(entrada[0]) + " comineza con 'A'"
+elif ord(entrada) == ord("Á"):
+    resultado = "'" + palabra + "'" + " comineza con 'A'"
 
-elif ord(entrada [0]) == ord("a"):
-    resultado = str(entrada[0]) + " comineza con 'A'"
+elif ord(entrada) == ord("a"):
+    resultado = "'" + palabra + "'" + " comineza con 'A'"
 
-elif ord(entrada [0]) == ord("á"):
-    resultado = str(entrada[0]) + " comineza con 'A'"
+elif ord(entrada) == ord("á"):
+    resultado = "'" + palabra + "'" + " comineza con 'A'"
 
 else:
-    resultado = str(entrada[0]) + " no comienza con 'A' "
+    resultado = "'" + palabra + "'" + " no comienza con 'A' "
 
 # Salidas
 print(resultado)
