@@ -10,23 +10,29 @@ Comienza con A
 #Si comienza con á
 
 # Entradas
-entrada = input("Escribe una palabra: ")
+palabra = input("Escribe una palabra: ")
+entrada = str(palabra[0])
+    
 
 # Proceso
-if ord(entrada [0]) == ord("A"):
-    resultado = str(entrada) + " comineza con 'A'"
-
-elif ord(entrada [0]) == ord("Á"):
-    resultado = str(entrada) + " comineza con 'A'"
-
-elif ord(entrada [0]) == ord("a"):
-    resultado = str(entrada) + " comineza con 'A'"
-
-elif ord(entrada [0]) == ord("á"):
-    resultado = str(entrada) + " comineza con 'A'"
+if int(entrada)  >= 1 and int(entrada) <= 9:
+    resultado = "Error. Escribe una palabra"
 
 else:
-    resultado = str(entrada) + " no comienza con 'A' "
+    if ord(entrada [0]) == ord("A"):
+        resultado = entrada + " comineza con 'A'"
+
+    elif ord(entrada [0]) == ord("Á"):
+        resultado = entrada + " comineza con 'A'"
+
+    elif ord(entrada [0]) == ord("a"):
+        resultado = entrada + " comineza con 'A'"
+
+    elif ord(entrada [0]) == ord("á"):
+        resultado = entrada + " comineza con 'A'"
+
+    else:
+        resultado = entrada + " no comienza con 'A' "
 
 # Salidas
 print(resultado)
