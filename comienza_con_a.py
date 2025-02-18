@@ -17,16 +17,16 @@ entrada = str(palabra[0])
 # Proceso
 
 if ord(entrada) == ord("A"):
-    resultado = "'" + palabra + "'" + " comineza con 'A'"
+    resultado = "'" + palabra + "'" + " comienza con 'A'"
 
 elif ord(entrada) == ord("Á"):
-    resultado = "'" + palabra + "'" + " comineza con 'A'"
+    resultado = "'" + palabra + "'" + " comienza con 'A'"
 
 elif ord(entrada) == ord("a"):
-    resultado = "'" + palabra + "'" + " comineza con 'A'"
+    resultado = "'" + palabra + "'" + " comienza con 'A'"
 
 elif ord(entrada) == ord("á"):
-    resultado = "'" + palabra + "'" + " comineza con 'A'"
+    resultado = "'" + palabra + "'" + " comienza con 'A'"
 
 else:
     resultado = "'" + palabra + "'" + " no comienza con 'A' "
